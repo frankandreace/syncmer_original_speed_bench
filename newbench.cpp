@@ -210,10 +210,7 @@ static void BigTable()
 
 void cmd_newbench()
 	{
-<<<<<<< HEAD
-=======
 	printf("NEW BENCH !!!\n") ;
->>>>>>> main
 	const string TabbedFileName = opt(newbench);
 	f = CreateStdioFile(TabbedFileName);
 	f2 = CreateStdioFile(opt(tabbedout2));

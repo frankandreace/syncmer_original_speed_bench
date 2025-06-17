@@ -1,9 +1,7 @@
-
 CPP = g++
 CPPOPTS = -std=c++14 -fopenmp -msse -mfpmath=sse -O3 -DNDEBUG -c -march=native
 
 CC = gcc
-
 CCOPTS = -fopenmp -msse -mfpmath=sse -O3 -DNDEBUG -c
 
 LNK = g++

@@ -205,10 +205,7 @@ STR_OPT(track)		//
 STR_OPT(tracks)		//
 STR_OPT(whiskerout)		//
 
-<<<<<<< HEAD
-=======
 UNS_OPT(algo,					0,			0,			UINT_MAX)	// -
->>>>>>> main
 UNS_OPT(k,					0,			0,			UINT_MAX)	// -
 UNS_OPT(klo,				0,			0,			UINT_MAX)	// -
 UNS_OPT(khi,				0,			0,			UINT_MAX)	// -

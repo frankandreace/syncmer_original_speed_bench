@@ -30,21 +30,12 @@ static uint64 GetSub(uint64 Word, uint s, uint Pos)
 	return Sub;
 	}
 
-<<<<<<< HEAD
-static uint GetMinPos(uint64 Word, uint k, uint s)
-	{
-	for (uint i = 0; i < k - s + 1; ++i)
-		{
-		}
-	}
-=======
 // static uint GetMinPos(uint64 Word, uint k, uint s)
 // 	{
 // 	for (uint i = 0; i < k - s + 1; ++i)
 // 		{
 // 		}
 // 	}
->>>>>>> main
 
 //static void Test(uint64 Word, uint k, uint s, uint Pos)
 //	{

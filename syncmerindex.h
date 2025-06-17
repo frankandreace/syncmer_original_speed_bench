@@ -26,10 +26,7 @@ public:
 	uint m_k = 0;
 	uint m_w = 0;
 	uint m_t = 0;
-<<<<<<< HEAD
-=======
 	uint64_t syncmer_count {0};
->>>>>>> main
 
 // Per-kmer vectors, length L + k - 1
 	vector<uint64> m_Kmers;

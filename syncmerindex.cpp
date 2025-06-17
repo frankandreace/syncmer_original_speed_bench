@@ -74,13 +74,8 @@ void SyncmerIndex::Create(SyncmerType ST, uint k, uint t, uint w,
 
 	SetKmers();
 	SetSyncmers();
-<<<<<<< HEAD
-	if (opt(validate))
-		Validate();
-=======
 	// if (opt(validate))
 	// 	Validate();
->>>>>>> main
 	}
 
 bool SyncmerIndex::CalcIsSyncmer(uint32 Coord) const
@@ -113,37 +108,22 @@ uint64 SyncmerIndex::KmerToHash(uint64 Kmer) const
 void SyncmerIndex::SetKmers()
 	{
 	m_Kmers.clear();
-<<<<<<< HEAD
-	m_Hashes.clear();
-=======
 	// m_Hashes.clear();
->>>>>>> main
 
 	asserta(m_L > 0 && m_k > 0);
 	asserta(m_L > m_k);
 	uint K = m_L - m_k + 1;
 
 	m_Kmers.reserve(K);
-<<<<<<< HEAD
-	m_Hashes.reserve(K);
-=======
 	// m_Hashes.reserve(K);
->>>>>>> main
 
 	for (uint i = 0; i < K; ++i)
 		{
 		uint64 Kmer = WordToKmer(m_Seq + i);
-<<<<<<< HEAD
-		uint64 Hash = KmerToHash(Kmer);
-
-		m_Kmers.push_back(Kmer);
-		m_Hashes.push_back(Hash);
-=======
 		// uint64 Hash = KmerToHash(Kmer);
 
 		m_Kmers.push_back(Kmer);
 		// m_Hashes.push_back(Hash);
->>>>>>> main
 		}
 	}
 
@@ -217,8 +197,6 @@ bool SyncmerIndex::IsSyncmer5(uint32 Coord) const
 	return Yes;
 	}
 
-<<<<<<< HEAD
-=======
 bool SyncmerIndex::IsSyncmer6(uint32 Coord) const
 	{
 	assert(Coord < SIZE(m_Hashes));
@@ -228,7 +206,6 @@ bool SyncmerIndex::IsSyncmer6(uint32 Coord) const
 	return Yes;
 	}
 
->>>>>>> main
 /***
 k=6, w=3
 Three consecutive k-mers, indow has 8 bases:
@@ -301,19 +278,6 @@ bool SyncmerIndex::IsMinimizer2(uint32 Coord) const
 
 void SyncmerIndex::SetSyncmers()
 	{
-<<<<<<< HEAD
-	m_CoordToSyncmerIx.clear();
-	uint K = GetKmerCount();
-
-	m_CoordToSyncmerIx.resize(K, UINT32_MAX);
-	uint Ix = 0;
-	for (uint Coord = 0; Coord < K; ++Coord)
-		{
-		if (CalcIsSyncmer(Coord))
-			{
-			m_CoordToSyncmerIx[Coord] = Ix++;
-			m_SyncmerCoords.push_back(Coord);
-=======
 	// m_CoordToSyncmerIx.clear();
 	uint K = GetKmerCount();
 
@@ -327,7 +291,6 @@ void SyncmerIndex::SetSyncmers()
 				syncmer_count++;
 		// 	// m_CoordToSyncmerIx[Coord] = Ix++;
 		// 	// m_SyncmerCoords.push_back(Coord);
->>>>>>> main
 			}
 		}
 	}

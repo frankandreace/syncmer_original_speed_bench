@@ -1,14 +1,9 @@
-<<<<<<< HEAD
-CPP = ccache g++
-CPPOPTS = -fopenmp -msse -mfpmath=sse -O3 -DNDEBUG -c
 
-CC = ccache gcc
-=======
 CPP = g++
 CPPOPTS = -std=c++14 -fopenmp -msse -mfpmath=sse -O3 -DNDEBUG -c -march=native
 
 CC = gcc
->>>>>>> main
+
 CCOPTS = -fopenmp -msse -mfpmath=sse -O3 -DNDEBUG -c
 
 LNK = g++
@@ -55,10 +50,7 @@ HDRS = \
 
 OBJS = \
   o/alpha.o \
-<<<<<<< HEAD
-=======
   o/speedbench.o \
->>>>>>> main
   o/bench.o \
   o/bench1.o \
   o/bench2.o \
@@ -112,12 +104,9 @@ syncmer : o/ $(OBJS)
 	$(LNK) $(LNKOPTS) $(OBJS) -o o/syncmer
 	strip -d o/syncmer
 
-<<<<<<< HEAD
-=======
 clean:
 	rm -rf o/
 
->>>>>>> main
 o/ :
 	mkdir -p o/
 
@@ -127,12 +116,9 @@ o/alpha.o : alpha.cpp $(HDRS)
 o/bench.o : bench.cpp $(HDRS)
 	$(CPP) $(CPPOPTS) -o o/bench.o bench.cpp
 
-<<<<<<< HEAD
-=======
 o/speedbench.o : speedbench.cpp $(HDRS)
 	$(CPP) $(CPPOPTS) -o o/speedbench.o speedbench.cpp
 
->>>>>>> main
 o/bench1.o : bench1.cpp $(HDRS)
 	$(CPP) $(CPPOPTS) -o o/bench1.o bench1.cpp
 

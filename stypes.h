@@ -10,10 +10,7 @@ t(Syncmer2)
 t(Syncmer3)
 t(Syncmer4)
 t(Syncmer5)
-<<<<<<< HEAD
-=======
 t(Syncmer6)
->>>>>>> main
 t(Stride)
 
 #undef t

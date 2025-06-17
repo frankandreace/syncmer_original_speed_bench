@@ -15,10 +15,7 @@ A(spacings)
 A(depthdist)
 A(cov1fract)
 A(newbench)
-<<<<<<< HEAD
-=======
 A(speedbench)
->>>>>>> main
 A(pair)
 A(pairs)
 A(searchsix)
